@@ -1,0 +1,21 @@
+{
+  "env": {
+    "test": "abc",
+    "GOOGLE_APPLICATION_CREDENTIALS": "./hello-2k19-5328895a9462.json"
+  },
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@now/node",
+      "config": {
+        "includeFiles": [
+          "hello-2k19-5328895a9462.json"
+        ]
+      }
+    },
+    {
+      "src": "*.html",
+      "use": "@now/static"
+    }
+  ]
+}
